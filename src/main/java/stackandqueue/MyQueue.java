@@ -10,6 +10,10 @@ public class MyQueue<K> {
 	public void enqueue(INode<K> node) {
 		list.appendNode(node);
 	}
+	
+	public void dequeue() {
+		list.pop();
+	}
 
 	public void printQueue() {
 		list.printNodes();
